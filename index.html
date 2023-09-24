@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator ISPU</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <h1>Kalkulator ISPU</h1>
+            <form id="ispu-form">
+                <label for="ia">Ia (Batas Atas ISPU):</label>
+                <input type="number" id="ia" name="ia" required>
+                <br>
+                <label for="ib">Ib (Batas Bawah ISPU):</label>
+                <input type="number" id="ib" name="ib" required>
+                <br>
+                <label for="xa">Xa (Konsentrasi Ambien Batas Atas µg/m³):</label>
+                <input type="number" id="xa" name="xa" required>
+                <br>
+                <label for="xb">Xb (Konsentrasi Ambien Batas Bawah µg/m³):</label>
+                <input type="number" id="xb" name="xb" required>
+                <br>
+                <label for="xx">Xx (Konsentrasi Ambien Nyata Hasil Pengukuran µg/m³):</label>
+                <input type="number" id="xx" name="xx" required>
+                <br>
+                <button id="btn" type="button" onclick="hitungISPU()">Hitung ISPU</button>
+            </form>
+        </fieldset>
+        <div id="result"></div>
+        <div id="kategori"></div>
+    </div>
+    <script src="/sript.js"></script>
+</body>
+</html>
